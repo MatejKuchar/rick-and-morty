@@ -2,20 +2,14 @@
   "name": "template",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "dependencies": {
-    "livereload": "^0.9.1",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.32.5",
     "node-sass": "^4.14.1"
   },
-  "devDependencies": {
-    "parcel": "^1.12.4",
-    "sass": "^1.32.5"
-  },
-  "browserslist": [
-    "since 2017-06"
-  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "keywords": [],
   "author": "",
